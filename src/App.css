@@ -1,0 +1,117 @@
+/* Configurações Gerais */
+.app-container {
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.content-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.title {
+  margin: 0;
+  color: #1a73e8;
+}
+
+.btn-logout {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.btn-logout:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+/* Formulário e Busca */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr auto;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline-color: #1a73e8;
+}
+
+.btn-add {
+  padding: 12px 20px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Tabela */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-head tr {
+  border-bottom: 2px solid #eee;
+  text-align: left;
+  color: #666;
+}
+
+.data-table th, .data-table td {
+  padding: 12px;
+  color: black;
+
+}
+
+.table-row {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.badge-category {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-delete {
+  color: #ff4d4d;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+}
