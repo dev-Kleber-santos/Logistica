@@ -6,8 +6,9 @@
   min-height: 100vh;
 }
 
+/* Card Principal */
 .content-card {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: white;
   padding: 30px;
@@ -15,19 +16,33 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
+/* Cabeçalho do Sistema */
 .app-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
+/* Informações do Usuário */
+.info-usuario .usuario {
+  display: block;
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.info-usuario .usuario b {
+  color: #1a73e8;
+}
+
+/* Título Principal */
 .title {
   margin: 0;
   color: #1a73e8;
 }
 
+/* Botões de Ação Superior */
 .btn-logout {
   padding: 8px 16px;
   border-radius: 6px;
@@ -36,7 +51,6 @@
   background: none;
   cursor: pointer;
   transition: 0.3s;
-  margin: 10px;
 }
 
 .btn-logout:hover {
@@ -44,12 +58,33 @@
   color: white;
 }
 
-/* Formulário e Busca */
+/* Botão Excel */
+.btn-excel {
+  background-color: #217346;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.btn-excel:hover {
+  background-color: #1a5a37;
+}
+
+/* Formulário de Cadastro */
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 100px 1fr auto;
+  grid-template-columns: 1.5fr 80px 1fr 1fr 1.2fr auto auto;
   gap: 10px;
   margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
 }
 
 .input-field {
@@ -57,8 +92,10 @@
   border-radius: 6px;
   border: 1px solid #ddd;
   outline-color: #1a73e8;
+  width: 100%;
 }
 
+/* Botões do Formulário */
 .btn-add {
   padding: 12px 20px;
   background-color: #1a73e8;
@@ -66,18 +103,65 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-edit-save {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-cancel {
+  padding: 12px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Filtros */
+.report-filters {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #eef0f2;
+}
+
+.date-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.date-group input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-group {
+  display: flex;
+  gap: 10px;
 }
 
 .search-field {
-  width: 100%;
+  flex: 1;
   padding: 12px;
   border-radius: 6px;
   border: 1px solid #ddd;
-  margin-bottom: 20px;
-  box-sizing: border-box;
 }
 
-/* Tabela */
+/* Estilização da Tabela */
 .data-table {
   width: 100%;
   border-collapse: collapse;
@@ -89,10 +173,10 @@
   color: #666;
 }
 
-.data-table th, .data-table td {
+.data-table th,
+.data-table td {
   padding: 12px;
-  color: black;
-
+  color: #333;
 }
 
 .table-row {
@@ -108,10 +192,35 @@
   font-weight: bold;
 }
 
+/* Ações da Tabela */
+.actions-cell {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn-edit {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #1a73e8;
+  transition: transform 0.2s;
+}
+
+.btn-edit:hover { 
+  transform: scale(1.2); 
+}
+
 .btn-delete {
   color: #ff4d4d;
   border: none;
   background: none;
   cursor: pointer;
-  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s;
+}
+
+.btn-delete:hover { 
+  transform: scale(1.2); 
 }
