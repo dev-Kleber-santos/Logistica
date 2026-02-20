@@ -65,3 +65,13 @@
 .login-button:hover {
   background-color: #1557b0;
 }
+
+p:hover {
+  text-decoration: underline;
+  color: #0d1b2a;
+}
+
+.login-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
